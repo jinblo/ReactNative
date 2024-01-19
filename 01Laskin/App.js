@@ -21,7 +21,6 @@ export default function App() {
         <Text>Result: {result}</Text>
         <TextInput style={styles.input} keyboardType='numeric' onChangeText={text => setLuku1(parseFloat(text))} />
         <TextInput style={styles.input} keyboardType='numeric' onChangeText={text => setLuku2(parseFloat(text))} />
-        <StatusBar style="auto" />
       </View>
       <View style={{ flexDirection: 'row', margin: 20 }}>
         <View style={{margin: 10}}>
@@ -31,6 +30,7 @@ export default function App() {
           <Button title="-" onPress={miinuslasku} />
         </View>
       </View>
+      <StatusBar style="auto" />
     </View>
   );
 }
